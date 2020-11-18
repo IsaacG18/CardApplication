@@ -52,5 +52,60 @@ namespace CardApplication
         {
 
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManufactorDD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CardBDbtn.Visible = true;
+            CardNBbtn.Visible = false;
+            CardAbtn.Visible = false;
+            variblelbl.Text = "Age";
+            variblelbl.Visible = true;
+            varibletxt.Visible = true;
+        }
+
+        private void NewBornbtn_Click(object sender, EventArgs e)
+        {
+            CardBDbtn.Visible = false;
+            CardNBbtn.Visible = true;
+            CardAbtn.Visible = false;
+            variblelbl.Text = "Date";
+            variblelbl.Visible = true;
+            varibletxt.Visible = true;
+        }
+
+        private void Anniversarybtn_Click(object sender, EventArgs e)
+        {
+            CardBDbtn.Visible = false;
+            CardNBbtn.Visible = false;
+            CardAbtn.Visible = true;
+            variblelbl.Text = "Year";
+            variblelbl.Visible = true;
+            varibletxt.Visible = true;
+        }
+
+        private void CardNBbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CardBDbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CardAbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
