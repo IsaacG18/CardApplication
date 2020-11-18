@@ -21,5 +21,6 @@ namespace CardApplication
         public String TextFont { get; set; }
 
         public String Gender { get; set; }
+        //comment
     }
 }
