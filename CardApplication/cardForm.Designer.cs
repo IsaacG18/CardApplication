@@ -36,6 +36,7 @@
             this.SendLNametxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SendEmailtxt = new System.Windows.Forms.TextBox();
+            this.Sendlbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Sendbtn
@@ -46,6 +47,7 @@
             this.Sendbtn.TabIndex = 0;
             this.Sendbtn.Text = "Create Sender";
             this.Sendbtn.UseVisualStyleBackColor = true;
+            this.Sendbtn.Click += new System.EventHandler(this.Sendbtn_Click);
             // 
             // SendFNametxt
             // 
@@ -106,11 +108,22 @@
             this.SendEmailtxt.Size = new System.Drawing.Size(100, 26);
             this.SendEmailtxt.TabIndex = 7;
             // 
+            // Sendlbl
+            // 
+            this.Sendlbl.AutoSize = true;
+            this.Sendlbl.Location = new System.Drawing.Point(426, 74);
+            this.Sendlbl.Name = "Sendlbl";
+            this.Sendlbl.Size = new System.Drawing.Size(115, 20);
+            this.Sendlbl.TabIndex = 8;
+            this.Sendlbl.Text = "Senders Name";
+            this.Sendlbl.Click += new System.EventHandler(this.label4_Click);
+            // 
             // cardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 450);
+            this.Controls.Add(this.Sendlbl);
             this.Controls.Add(this.SendEmailtxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.SendLNametxt);
@@ -137,6 +150,7 @@
         private System.Windows.Forms.TextBox SendLNametxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox SendEmailtxt;
+        private System.Windows.Forms.Label Sendlbl;
     }
 }
 
