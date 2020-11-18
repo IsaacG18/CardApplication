@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardApplication
 {
-    class Customers
+    public class Customers
     {
         public int ID { get; set; }
         public string FirstName { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardApplication
 {
-    class Card
+    public abstract class Card
     {
         public Customers Customers { get; set; }
 
@@ -23,5 +23,7 @@ namespace CardApplication
         public String TextFont { get; set; }
 
         public String Gender { get; set; }
+
+        public override abstract string ToString();
     }
 }
