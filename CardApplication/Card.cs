@@ -10,6 +10,8 @@ namespace CardApplication
     {
         public Customers Customers { get; set; }
 
+        public Manfactor Manfactor { get; set; }
+
         public String message  { get; set; }
 
         public String greeting { get; set; }
@@ -21,6 +23,5 @@ namespace CardApplication
         public String TextFont { get; set; }
 
         public String Gender { get; set; }
-        //comment
     }
 }

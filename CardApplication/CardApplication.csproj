@@ -53,6 +53,7 @@
     <Compile Include="cardForm.Designer.cs">
       <DependentUpon>cardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manfactor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Customers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
