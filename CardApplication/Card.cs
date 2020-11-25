@@ -20,10 +20,10 @@ namespace CardApplication
 
         public String Address { get; set; }
 
-        public String TextFont { get; set; }
+        public String Colour { get; set; }
 
-        public String Gender { get; set; }
 
-        public override abstract string ToString();
+
+        public abstract override string ToString();
     }
 }

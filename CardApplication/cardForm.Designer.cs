@@ -56,6 +56,19 @@
             this.CardAbtn = new System.Windows.Forms.Button();
             this.variblelbl = new System.Windows.Forms.Label();
             this.varibletxt = new System.Windows.Forms.TextBox();
+            this.listCards = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.varibletxt2 = new System.Windows.Forms.TextBox();
+            this.variblelbl2 = new System.Windows.Forms.Label();
+            this.checkbtn = new System.Windows.Forms.Button();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.expiryDatetxt = new System.Windows.Forms.TextBox();
+            this.cardNumbertxt = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.SCtxt = new System.Windows.Forms.TextBox();
+            this.paybtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Sendbtn
@@ -249,7 +262,7 @@
             // 
             this.Birthdaybtn.Location = new System.Drawing.Point(676, 107);
             this.Birthdaybtn.Name = "Birthdaybtn";
-            this.Birthdaybtn.Size = new System.Drawing.Size(152, 37);
+            this.Birthdaybtn.Size = new System.Drawing.Size(225, 37);
             this.Birthdaybtn.TabIndex = 23;
             this.Birthdaybtn.Text = "Birthday Card";
             this.Birthdaybtn.UseVisualStyleBackColor = true;
@@ -259,7 +272,7 @@
             // 
             this.NewBornbtn.Location = new System.Drawing.Point(676, 147);
             this.NewBornbtn.Name = "NewBornbtn";
-            this.NewBornbtn.Size = new System.Drawing.Size(152, 37);
+            this.NewBornbtn.Size = new System.Drawing.Size(225, 37);
             this.NewBornbtn.TabIndex = 24;
             this.NewBornbtn.Text = "New Born";
             this.NewBornbtn.UseVisualStyleBackColor = true;
@@ -269,7 +282,7 @@
             // 
             this.Anniversarybtn.Location = new System.Drawing.Point(676, 188);
             this.Anniversarybtn.Name = "Anniversarybtn";
-            this.Anniversarybtn.Size = new System.Drawing.Size(152, 37);
+            this.Anniversarybtn.Size = new System.Drawing.Size(225, 37);
             this.Anniversarybtn.TabIndex = 25;
             this.Anniversarybtn.Text = "Anniversary";
             this.Anniversarybtn.UseVisualStyleBackColor = true;
@@ -300,7 +313,7 @@
             // variblelbl
             // 
             this.variblelbl.AutoSize = true;
-            this.variblelbl.Location = new System.Drawing.Point(666, 240);
+            this.variblelbl.Location = new System.Drawing.Point(672, 237);
             this.variblelbl.Name = "variblelbl";
             this.variblelbl.Size = new System.Drawing.Size(38, 20);
             this.variblelbl.TabIndex = 29;
@@ -309,18 +322,150 @@
             // 
             // varibletxt
             // 
-            this.varibletxt.Location = new System.Drawing.Point(709, 237);
+            this.varibletxt.Location = new System.Drawing.Point(731, 237);
             this.varibletxt.Name = "varibletxt";
-            this.varibletxt.Size = new System.Drawing.Size(119, 26);
+            this.varibletxt.Size = new System.Drawing.Size(170, 26);
             this.varibletxt.TabIndex = 28;
             this.varibletxt.WordWrap = false;
+            // 
+            // listCards
+            // 
+            this.listCards.FormattingEnabled = true;
+            this.listCards.ItemHeight = 20;
+            this.listCards.Location = new System.Drawing.Point(50, 427);
+            this.listCards.Name = "listCards";
+            this.listCards.Size = new System.Drawing.Size(610, 184);
+            this.listCards.TabIndex = 30;
+            this.listCards.SelectedIndexChanged += new System.EventHandler(this.listCards_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(65, 323);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 66);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "End";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // varibletxt2
+            // 
+            this.varibletxt2.Location = new System.Drawing.Point(777, 269);
+            this.varibletxt2.Name = "varibletxt2";
+            this.varibletxt2.Size = new System.Drawing.Size(124, 26);
+            this.varibletxt2.TabIndex = 32;
+            this.varibletxt2.Visible = false;
+            this.varibletxt2.WordWrap = false;
+            // 
+            // variblelbl2
+            // 
+            this.variblelbl2.AutoSize = true;
+            this.variblelbl2.Location = new System.Drawing.Point(672, 269);
+            this.variblelbl2.Name = "variblelbl2";
+            this.variblelbl2.Size = new System.Drawing.Size(102, 20);
+            this.variblelbl2.TabIndex = 33;
+            this.variblelbl2.Text = "Parent Name";
+            this.variblelbl2.Visible = false;
+            // 
+            // checkbtn
+            // 
+            this.checkbtn.Location = new System.Drawing.Point(688, 371);
+            this.checkbtn.Name = "checkbtn";
+            this.checkbtn.Size = new System.Drawing.Size(152, 37);
+            this.checkbtn.TabIndex = 34;
+            this.checkbtn.Text = "Check Out";
+            this.checkbtn.UseVisualStyleBackColor = true;
+            this.checkbtn.Click += new System.EventHandler(this.checkbtn_Click);
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(684, 478);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(44, 20);
+            this.lblPrice.TabIndex = 35;
+            this.lblPrice.Text = "Price";
+            this.lblPrice.Visible = false;
+            this.lblPrice.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // expiryDatetxt
+            // 
+            this.expiryDatetxt.Location = new System.Drawing.Point(865, 512);
+            this.expiryDatetxt.Name = "expiryDatetxt";
+            this.expiryDatetxt.Size = new System.Drawing.Size(230, 26);
+            this.expiryDatetxt.TabIndex = 37;
+            // 
+            // cardNumbertxt
+            // 
+            this.cardNumbertxt.Location = new System.Drawing.Point(865, 480);
+            this.cardNumbertxt.Name = "cardNumbertxt";
+            this.cardNumbertxt.Size = new System.Drawing.Size(230, 26);
+            this.cardNumbertxt.TabIndex = 36;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(759, 512);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 20);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "Expiry Date";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(746, 480);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(103, 20);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "Card Number";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(737, 547);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(112, 20);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Security Code ";
+            // 
+            // SCtxt
+            // 
+            this.SCtxt.Location = new System.Drawing.Point(865, 544);
+            this.SCtxt.Name = "SCtxt";
+            this.SCtxt.Size = new System.Drawing.Size(230, 26);
+            this.SCtxt.TabIndex = 40;
+            this.SCtxt.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // paybtn
+            // 
+            this.paybtn.Location = new System.Drawing.Point(902, 582);
+            this.paybtn.Name = "paybtn";
+            this.paybtn.Size = new System.Drawing.Size(152, 37);
+            this.paybtn.TabIndex = 42;
+            this.paybtn.Text = "Pay";
+            this.paybtn.UseVisualStyleBackColor = true;
+            this.paybtn.Click += new System.EventHandler(this.paybtn_Click);
             // 
             // cardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Sendbtn;
-            this.ClientSize = new System.Drawing.Size(1090, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 639);
+            this.Controls.Add(this.paybtn);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.SCtxt);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.expiryDatetxt);
+            this.Controls.Add(this.cardNumbertxt);
+            this.Controls.Add(this.lblPrice);
+            this.Controls.Add(this.checkbtn);
+            this.Controls.Add(this.variblelbl2);
+            this.Controls.Add(this.varibletxt2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listCards);
             this.Controls.Add(this.variblelbl);
             this.Controls.Add(this.varibletxt);
             this.Controls.Add(this.CardAbtn);
@@ -387,6 +532,19 @@
         private System.Windows.Forms.Button CardAbtn;
         private System.Windows.Forms.Label variblelbl;
         private System.Windows.Forms.TextBox varibletxt;
+        private System.Windows.Forms.ListBox listCards;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox varibletxt2;
+        private System.Windows.Forms.Label variblelbl2;
+        private System.Windows.Forms.Button checkbtn;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.TextBox expiryDatetxt;
+        private System.Windows.Forms.TextBox cardNumbertxt;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox SCtxt;
+        private System.Windows.Forms.Button paybtn;
     }
 }
 

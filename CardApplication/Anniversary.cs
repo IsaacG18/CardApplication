@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CardApplication
 {
-    public class Birthday : Card
+    class Anniversary : Card
     {
-        public int age { get; set; }
-        
+        public int years { get; set; }
+
         public override string ToString() // This overrides the ToString() class in Ticket.
         {
             string message;
@@ -17,14 +17,13 @@ namespace CardApplication
 
             
             sb.Append(Reciver);
-            sb.Append("'s birthday card from ");
+            sb.Append("'s anniversary card from ");
             sb.Append(Customers.FirstName);
-            sb.Append(" Age: ");
-            sb.Append(age);           
-            sb.Append(" Manufactor: ");
-            sb.Append(Address);
-
-        
+            sb.Append(" Years: ");
+            sb.Append(years);
+            sb.Append(" Manactor: S");
+            sb.Append(Manfactor.Name);
+            
             message = sb.ToString();
 
             return message;

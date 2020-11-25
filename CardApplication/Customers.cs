@@ -8,6 +8,7 @@ namespace CardApplication
 {
     public class Customers
     {
+        public Payment Payment { get; set; }
         public int ID { get; set; }
         public string FirstName { get; set; }
 
